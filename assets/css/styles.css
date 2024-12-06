@@ -5,8 +5,8 @@ html {
 #mainView {
   /*min-width: 600px;*/
   /*min-height: 337.5px;*/
-  min-width: 700px;
-  min-height: 393.75px;
+  /*min-width: 700px;*/
+  /*min-height: 393.75px;*/
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -17,11 +17,17 @@ html {
 }
 
 @media (min-aspect-ratio: 16/9) {
+  html, body {
+    height:100%;
+  }
+
   #mainView {
-    height: 100vh;
+    /* height: 100vh; */
+    height:100%;
     margin: auto;
   }
 }
+
 
 @media (max-aspect-ratio:15.999/9) {
   #mainView {
@@ -205,4 +211,38 @@ html {
     overflow-y: visible;
   }
 }
+@media (min-aspect-ratio: 16/9) and (max-height: 480px) {
+  .pageText {
+    font-size: 3.84vh;
+  }
+  .pageTitle {
+    font-size: 7.5vh;
+  }
 
+  .itemTitle {
+    font-size: 7vh;
+  }
+  
+  .actionbtn {
+    font-size: 5vh;
+  }
+
+}
+
+@media (max-aspect-ratio: 15.999/9) and (max-width: 700px) {
+  .pageTitle {
+    font-size: 4.21875vw;
+  }
+
+  .pageText {
+    font-size: 2.3vw;
+  }
+
+  .itemTitle {
+    font-size: 3.5vw;
+  }
+
+  .actionbtn {
+    font-size: 2.5vw;
+  }
+}
